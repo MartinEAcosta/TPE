@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Mecanico</title>
+    <link rel="stylesheet" href="css/estilo_home.css">
+    <!--Letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head> 
+<body>
+<div class="encabezado">
+    <h1>Taller Mecanico Route 66 </h1> 
+        <div class="menu">
+            <ul class="botones">
+                <button class="boton" onclick="location.href='index.html'"><li class="item">INICIO</li></button>
+                <button class="boton" onclick="location.href='servicio_mecanico.html'"><li class="item">SERVICIO MECANICO</li></button>
+                <button class="boton" onclick="location.href='productos.html'"><li class="item">PRODUCTOS</li></button>
+            </ul>
+       </div>
+ </div>
+<div id="contenedor">
+    <div id="horario_atencion">
+        <h2 class="titulos">Horarios de Atencion</h2>
+            <p class="textos">Contamos con un amplio horario de atencion y trabajadores sumamente especializados.</p>
+                <ul>
+                    <li> Lunes a Viernes: 8am a 13pm y 15pm a 20pm</li>
+                    <li> Sabados: 8am a 13pm</li>
+                </ul>
+            <p class="textos">Ademas de un amplio stock de productos y ventas de autopartes,
+                 realizamos trabajos de chapa y pintura, polarizados, instalacion de equipos de audio.</p>
+            <div class="muestra">
+                     <img id="muestra" src="images/polarizado.jpg" alt="Polarizado">
+            </div>
+    </div>
+    <div id="contacto">
+           <h2 class="titulos">Contacto</h2>
+                <p class="textos"> Si usted tiene alguna duda, contactenos registrandose en el sitio.</p> 
+        <div class="formulario">
+        <form>
+            <p><label for="nombre">Nombre:</label>
+            <input class="cuadro_texto" type="text" name="nombre" value=""></p>
+            <p><label for="password">Clave:</label>
+            <input class="cuadro_texto" type="password" name="pass" id=""></p>
+            <label for="radio">Genero:</label>
+            <p><input type="radio" name="sexo" value="masculino"/> <label for= "Masculino">Masculino</label>
+            <input type="radio" name="sexo" value="femenino"/> <label for= "Femenino">Femenino</label></p>
+            <label for="localidad">Localidad:</label>
+            <input type="checkbox" name="localidad" value="Tandil"/> <label for= "Tandil">Tandil</label>
+            <input type="checkbox" name="localidad" value="Olavarria"/> <label for= "Olavarria">Olavarria</label>
+            <input type="checkbox" name="localidad" value="Balcarce" /> <label for= "Balcarce">Balcarce</label>
+        </div>
+        <div class="div_captcha">
+            <h2 id="captcha">Captcha</h2>   
+                <p>Numeros: <p id= "NumRandom">00000</p></p>
+                <input type="number" id="Ingresarcaptcha">
+            </form>
+                <button id="botonCaptcha">Enviar captcha</button>
+                <p>Respuesta: <p id="respuesta"></p></p>
+        </div>
+        
+    </div>
+    <div>  
+        <img id="logo" src="images/logo.png" alt="Logo">
+        <div id="sucursales">
+            <h2 class="titulos">Nuestras sucursales</h2>
+            <p id="lugares">Tandil: <span class="subrayado_sucursal">Avenida Espania y San lorenzo (Esquina).</p></span>
+            <p id="lugares">Balcarce: <span class="subrayado_sucursal">Calle 18 y Calle 17 (Esquina).</p></span>
+            <p id="lugares">Olavarria: <span class="subrayado_sucursal" >Avenida Colon y 25 de mayo (Esquina).</p></span>
+        </div>
+    </div>
+</div>
+<div id="contenedor_inferior">
+    <div class="somos">
+            <h2 class="titulos">¿Quienes somos?</h2>
+                <p class="textos"> Route 66 Es una cadena de talleres mecanicos que tiene Argentina.
+                Sus creadores son dos mejores amigos de la infancia Martin Acosta y Marcos Gallinal, 
+                quienes empezaron este sueño abriendo su primer taller en Tandil, ciudad de la Provincia
+                de Buenos Aires. En la actualidad Route 66 se expandio con sucursal en Balcarce y Olavarria.</p>
+
+    </div>
+    <div class="redes">
+            <h3 class="redes">Redes Sociales</h3>
+        <div class="texto_redes">
+            <a href=https://www.instagram.com/taller.route66/ target="_blank" rel="noopener noreferrer">
+                <p id="redes">Instagram</p>
+            </a><img class="redes_logos" src="images/instagram.png" alt="Logo Instagram">
+        </div>
+        <div class="texto_redes">
+            <a href="https://www.facebook.com/Route66Raceway" target="_blank" rel="noopener noreferrer">
+                <p id="redes">Facebook</p>
+            </a><img class="redes_logos" src="images/facebook.png" alt="Logo Facebook">
+        </div>
+    </div>
+</div>
+<footer>
+    <p>|2022|Tandil-Olavarria-Balcarce|Provincia de Buenos Aires|Argentina|Taller Mecanico| </p>
+</footer>
+<script type="text/javascript" src="js/captcha.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(61, 61, 65);
+
+}
+.encabezado{
+    background-color: grey;
+    width: auto;
+    height: 150px;
+    border-style: solid;
+    margin: 3px;   
+}
+h1{ 
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1cm;
+}
+.titulos{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.botones{
+    display: flex;
+    height: 33px;
+    background: rgb(42, 41, 45);
+    justify-content: space-around;
+    border-top: 5px solid rgb(8, 64, 168);
+    border-bottom: 5px solid rgb(8, 64, 168);
+    border-left: 5px solid rgb(8, 64, 168);
+    border-right:5px solid rgb(8, 64, 168);
+}
+.item{
+    color: white;
+    background-color: rgb(26, 24, 24);
+    padding: 8px;
+    margin: 0px;
+    text-transform: uppercase;
+    list-style: none;
+    border-left: solid rgb(8, 64, 168);
+    border-right: solid rgb(8, 64, 168);
+}
+.item:hover{
+    background: rgb(12, 83, 214);
+}
+.boton{
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+}
+.contenedor{
+    display: flex;
+}
+.bloques{
+    width: 50%;
+    padding: 15px;
+    margin: 3px;
+    border-style: solid;
+    background-color: grey;
+    text-align: center;
+}
+.textos{
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.lista{
+    list-style: none;
+    color: rgb(12, 83, 214);
+    font-size: 20px;
+}
+footer{
+    background-color: white;
+    text-align: center;
+    text-decoration: underline;
+  }

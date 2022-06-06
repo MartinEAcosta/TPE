@@ -1,3 +1,4 @@
+"use strict"
 let random = Math.random() * 100000;
 random = Math.floor (random) ;
 let numero = document.querySelector ("#NumRandom");

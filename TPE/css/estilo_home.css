@@ -63,7 +63,7 @@ li{
     list-style-type:square;
     color:rgb(12, 83, 214);
 }
-.muestra{
+#polarizado{
     text-align: center;
 }
 #muestra{
@@ -92,6 +92,9 @@ li{
     margin-left: 150px;
     margin-right: 150px;
     background-color: rgb(12, 83, 214) ;
+}
+figure{
+    
 }
 #logo{
     margin-left: 50px;

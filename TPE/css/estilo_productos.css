@@ -2,7 +2,7 @@
   background-color: rgb(61, 61, 65);
 
 }
-.encabezado{
+header{
   background-color: grey;
   width: auto;
   height: 150px;
@@ -25,7 +25,7 @@ h1{
   border-left: 5px solid rgb(8, 64, 168);
   border-right:5px solid rgb(8, 64, 168);
 }
-.item{
+.btn{
   color: white;
   background-color: rgb(26, 24, 24);
   padding: 8px;
@@ -35,7 +35,7 @@ h1{
   border-left: solid rgb(8, 64, 168);
   border-right: solid rgb(8, 64, 168);
 }
-.item:hover{
+.btn:hover{
   background: rgb(12, 83, 214);
 }
 .boton{

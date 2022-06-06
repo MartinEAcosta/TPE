@@ -3,7 +3,7 @@ body{
     background-color: rgb(61, 61, 65);
 
 }
-.encabezado{
+header{
     background-color: grey;
     width: auto;
     height: 150px;
@@ -141,7 +141,7 @@ li{
     font-size: 20px;
     border-style: solid;
 }
-div.redes{
+div.redes_sociales{
     width: 20%;
     margin-top: 3px;
     margin-bottom: 3px;

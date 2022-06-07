@@ -7,6 +7,11 @@ body{
 	body {  
         background-color: rgb(235, 209, 95); 
   }
+
+  .btn_menu {
+    color: white;
+    padding: 15px;
+}
   
 }
 header{

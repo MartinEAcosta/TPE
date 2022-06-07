@@ -3,6 +3,12 @@ body{
     background-color: rgb(61, 61, 65);
 
 }
+@media only screen and (max-width:600px) { 
+	body {  
+        background-color: rgb(235, 209, 95); 
+  }
+  
+}
 header{
     background-color: grey;
     width: auto;

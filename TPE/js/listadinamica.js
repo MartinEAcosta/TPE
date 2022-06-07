@@ -3,8 +3,10 @@
 let btnagregar = document.querySelector("#btn-agregar");
 btnagregar.addEventListener('click', agregarprod);
 
-let btnquitar = document.querySelector("#btn-quitar");
-btnquitar.addEventListener('click', quitarprod);
+
+
+let btntotal = document.querySelector("#btn-total");
+btntotal.addEventListener('click', totalprod);
 
 let compras = [];
 
@@ -23,4 +25,21 @@ function agregarprod() {
     document.querySelector("#lista").innerHTML += "<li>" + renglon.Producto + " Cantidad " + renglon.Cantidad + "</li>";
     documentquerySelector('#Producto').value = "";
 }
-function quitarprod(){}
+function totalprod(){
+    console.log("Total de precio")
+    let total = 0;
+    for(let i = 0; i< compras.length; i++){
+        let r = compras[i]
+        console.log(r)
+        total += r.totalItem;
+    }
+    let max = compras[0].totalItem;
+    for(let r of compras) {
+        console.log(r)
+        if(max< r.totalItem)
+            max = r.totalItem;
+    }
+    documentquerySelector("#total").innerHTML = 
+        "Total: $" + total +
+        " Maximo: $" + max;
+}

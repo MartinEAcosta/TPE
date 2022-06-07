@@ -3,17 +3,30 @@ body{
     background-color: rgb(61, 61, 65);
 
 }
+
+
+  .btn_menu {
+      margin-right: 30px;
+      font-size:25px;
+      color: white;
+      cursor: pointer;
+      display: none;
+  }
+
+  ul.show{
+      top:65px;
+  
+}
+
 @media only screen and (max-width:600px) { 
 	body {  
         background-color: rgb(235, 209, 95); 
-  }
+    }
+    .botones li a {
+        font-size: 16px;
+    }
+}
 
-  .btn_menu {
-    color: white;
-    padding: 15px;
-}
-  
-}
 header{
     background-color: grey;
     width: auto;

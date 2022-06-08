@@ -1,31 +1,21 @@
 
 body{
     background-color: rgb(61, 61, 65);
-
+}
+header{
+    border-style: solid;
+    background-color: grey;
+}
+h1{
+    color: white;
+    
 }
 
-
-  .btn_menu {
-      margin-right: 30px;
-      font-size:25px;
-      color: white;
-      cursor: pointer;
-      display: none;
-  }
-
-  ul.show{
-      top:65px;
-  
-}
-
-@media only screen and (max-width:600px) { 
-	body {  
-        background-color: rgb(235, 209, 95); 
+@media only screen and (min-width:660px) {
+    body{
+        background-color: rgb(61, 61, 65);
+    
     }
-    .botones li a {
-        font-size: 16px;
-    }
-}
 
 header{
     background-color: grey;
@@ -201,4 +191,6 @@ footer{
     background-color: white;
     text-align: center;
     text-decoration: underline;
+}
+
 }

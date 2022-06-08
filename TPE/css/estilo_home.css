@@ -1,16 +1,32 @@
+@media only screen and (max-width:660px) {  
+    body{
+        background-color: rgb(61, 61, 65);
+    }
+    header{
+        border-style: solid;
+        background-color: grey;
+    }
+    .logo{
+        color: white;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+    }
 
-body{
-    background-color: rgb(61, 61, 65);
-}
-header{
-    border-style: solid;
-    background-color: grey;
-}
-h1{
-    color: white;
-    
-}
+    #polarizado{
+        display:none;
+    }
 
+    .botones{
+        display: flex;
+        justify-content: left;
+    }
+    .boton{
+        background: none;
+        border: 0;
+        color: inherit;
+    }
+}
 @media only screen and (min-width:660px) {
     body{
         background-color: rgb(61, 61, 65);

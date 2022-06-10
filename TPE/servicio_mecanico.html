@@ -10,17 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a45b6fab02.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Taller Mecanico Route 66 </h1> 
-            <nav>
-                <ul class="botones">
-                    <button class="boton" onclick="location.href='index.html'"><li class="btn">INICIO</li></button>
-                    <button class="boton" onclick="location.href='servicio_mecanico.html'"><li class="btn">SERVICIO MECANICO</li></button>
-                    <button class="boton" onclick="location.href='productos.html'"><li class="btn">PRODUCTOS</li></button>
+        <div class="logo">
+            <h1>Taller Mecanico Route 66</h1>
+            <div class="btn_menu"><a class="fas fa-bars"></a></div>
+        </div>
+             <div class="menu">
+               <ul class="navigation">
+                    <button onclick="location.href='index.html'">
+                        <li class="boton">
+                            INICIO
+                        </li>
+                    </button>
+                    <button onclick="location.href='servicio_mecanico.html'">
+                        <li class="boton">
+                            SERVICIO MECANICO
+                        </li>
+                    </button>
+                    <button onclick="location.href='productos.html'">
+                        <li class="boton">
+                            PRODUCTOS
+                        </li>
+                    </button>
                 </ul>
-            </nav>
+             </div> 
     </header>
     <div class="contenedor">
         <div class="bloques">
@@ -58,5 +74,6 @@
  <footer>
         <p>|2022|Tandil-Olavarria-Balcarce|Provincia de Buenos Aires|Argentina|Taller Mecanico| </p>
  </footer>
+ <script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>

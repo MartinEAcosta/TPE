@@ -11,9 +11,6 @@ btntotal.addEventListener('click', totalprod);
 let btnlimpiar = document.querySelector("#btn-limpiar");
 btnlimpiar.addEventListener('click', limpiarcarrito);
 
-let btnquitar = document.querySelector("#btn-quitar");
-btnquitar.addEventListener('click', quitaruno);
-
 let compras = [];
 
 function agregarprod() {
@@ -50,13 +47,8 @@ function totalprod(){
         " Maximo: $" + max;
 }
 
-function limpiarcarrito(total) {
+function limpiarcarrito() {
     console.log("Limpiar carrito")
     document.querySelector("#lista").innerHTML = "";
-}
-
-function quitaruno(renglon) {
-    console.log("Quitar ultimo producto")
-    compras.push(renglon); 
-    document.querySelector("#lista").innerHTML -= "<li>" + "</li>";
+    document.querySelector("#total").innerHTML = "";
 }

@@ -10,18 +10,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a45b6fab02.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1>Taller Mecanico Route 66 </h1> 
-        <nav>
-            <ul class="botones">
-                <button class="boton" onclick="location.href='index.html'"><li class="btn">INICIO</li></button>
-                <button class="boton" onclick="location.href='servicio_mecanico.html'"><li class="btn">SERVICIO MECANICO</li></button>
-                <button class="boton" onclick="location.href='productos.html'"><li class="btn">PRODUCTOS</li></button>
-            </ul>
-        </nav>
-</header> 
+    <div id="contenedor_principal">
+      <div class="logo">
+          <h1>Taller Mecanico Route 66</h1>
+          <div class="btn_menu"><a class="fas fa-bars"></a></div>
+      </div>
+          <div class="menu">
+            <ul class="navigation">
+                  <button onclick="location.href='index.html'">
+                      <li class="boton">
+                          INICIO
+                      </li>
+                  </button>
+                  <button onclick="location.href='servicio_mecanico.html'">
+                      <li class="boton">
+                          SERVICIO MECANICO
+                      </li>
+                  </button>
+                  <button onclick="location.href='productos.html'">
+                      <li class="boton">
+                          PRODUCTOS
+                      </li>
+                  </button>
+              </ul>
+          </div> 
+</header>
 <div class="contenedor">
     <h2 id="titulo_ventas">Sector de ventas</h2>
       <p id="texto_ventas"> En Route 66 disponemos de una gran variedad de productos en venta con descuentos
@@ -198,20 +215,23 @@
            
           </table>
         </div>
+      <div id="lista-dinamica">
+        <button type="button" class="btn-lista" id="btn-agregar">Agregar al carrito</button>
+        <button type="button" class="btn-lista" id="btn-total">Sumar total</button>
+        <button type="button" class="btn-lista" id="btn-limpiar">Limpiar el carrito</button>
         <input type="text" name="" value="" id="Producto" placeholder="Producto">
         <input type="text" name="" value="" id="Cantidad" placeholder="Cantidad">
         <input type="text" name="" value="" id="Precio" placeholder="Precio">
-        <button type="button" id="btn-agregar">Agregar al carrito</button>
-        <button type="button" id="btn-quitar">Quitar del carrito</button>
-        <button type="button" id="btn-total">Sumar total</button>
-        <button type="button" id="btn-limpiar">Limpiar el carrito</button>
+
         <p id="total"></p>
         <ul id="lista"></ul>
+      </div>
         <h3>Nos encontramos a la espera del ingreso de nuevo material para ventas.</h3>
 </div>
 <footer> 
   <p>|2022|Tandil-Olavarria-Balcarce|Provincia de Buenos Aires|Argentina|Taller Mecanico| </p>
 </footer>
-<script type="text/javascript" src="js/listadinamica.js"></script>
+<script type="text/javascript" src="js/tabladinamica.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>

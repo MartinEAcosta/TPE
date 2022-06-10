@@ -1,59 +1,191 @@
-  body{
-  background-color: rgb(61, 61, 65);
+
+body{
+  background-color: rgb(255, 232, 23);
 
 }
+.logo { 
+  display: block;
+  padding: 10px;
+  background-color: rgb(61, 61, 65);
+  color: white;
+  border-style: solid;
+  border-color: black;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+}
+button{
+  background: none;
+  border: 0px;
+  color: inherit;
+}
+.boton{
+  color: rgb(255, 232, 23);
+}
+.btn_menu {
+  color: white;
+  padding: 15px;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: black;
+  width: fit-content;
+  font-size: 15px;
+}
+.btn_menu a{
+  color: rgb(255 215 0);
+  text-decoration: none;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  background-color: black;
+}
+ul.navigation {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+  flex-direction: column;
+}
+ul.navigation.show {
+      display: flex;
+}
+ul.navigation li {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 15px 20px;
+}
+ul.navigation li a {
+  text-decoration: none;
+  color: rgb(255 215 0);
+}
+ul.navigation li:hover {
+  background-color: gray;
+}
+
+.contenedor {
+  flex-direction: column;
+  background-color: rgb(61, 61, 65);
+  border-style: solid;
+  margin-top: 10px;
+}
+
+#titulo_ventas{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#texto_ventas{
+  color: white;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tablas{
+  display:flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+th {
+    background-color: rgb(61, 61, 65);
+    color: white;
+  }
+  
+  tbody {
+    color: white;
+    
+    
+  }
+  
+  tfoot {
+    color: white;
+    
+  }
+  
+  table, td, tr {
+    border: 1px solid black;
+      border-collapse: collapse;
+  }
+
+  footer{
+    background-color: grey;
+    border: solid;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+.btn-lista{
+  background-color: white;
+  border-style: solid;
+}
+
+
+@media only screen and (min-width: 660px) {
+
+body{
+  background-color: grey;
+
+}
+.btn_menu {
+  display: none;
+} 
 header{
   background-color: grey;
   width: auto;
-  height: 150px;
-  border-style: solid;
+  height: 185px;
   margin: 3px;   
 }
+
+.logo { 
+  display: block;
+  padding: 10px;
+  background-color: rgb(61, 61, 65);
+  color: white;
+  border-style: solid;
+  border-color: black;
+}
+
 h1{ 
   color: white;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-size: 1cm;
 }
-.botones{
-  display: flex;
-  height: 33px;
-  background: rgb(42, 41, 45);
-  justify-content: space-around;
-  border-top: 5px solid rgb(8, 64, 168);
-  border-bottom: 5px solid rgb(8, 64, 168);
-  border-left: 5px solid rgb(8, 64, 168);
-  border-right:5px solid rgb(8, 64, 168);
-}
-.btn{
-  color: white;
-  background-color: rgb(26, 24, 24);
-  padding: 8px;
-  margin: 0px;
-  text-transform: uppercase;
-  list-style: none;
-  border-left: solid rgb(8, 64, 168);
-  border-right: solid rgb(8, 64, 168);
-}
-.btn:hover{
-  background: rgb(12, 83, 214);
-}
-.boton{
+
+button{
   background: none;
   border: 0;
   color: inherit;
-  font: inherit;
-  padding: 0;
 }
+.boton{
+  border-style: solid;
+  color: rgb(255, 232, 23);
+  background-color: rgb(27, 27, 29);
+}
+ul.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .contenedor{
+  display: flex;
   width: auto;
   padding: 15px;
   margin: 3px;
   margin-top: 6px;
   border-style: solid;
-  background-color: grey;
+  background-color: rgb(27, 27, 29);
+}
+
+.btn-lista{
+  background-color: white;
+  border-style: solid;
+  margin: 2px;
+  border-color: black;
 }
 #titulo_ventas{
+  color: white;
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -64,6 +196,7 @@ h1{
 }
 .tablas{
   display:flex;
+  flex-direction: row;
   justify-content: space-around;
   padding-bottom: 15px;
 }
@@ -73,13 +206,13 @@ th {
   }
   
   tbody {
-    color: rgb(12, 83, 214);
+    color: rgb(255, 232, 23);
     
     
   }
   
   tfoot {
-    color: rgb(12, 83, 214);
+    color: rgb(255, 232, 23);
     
   }
   
@@ -100,4 +233,5 @@ footer{
   background-color: white;
   text-align: center;
   text-decoration: underline;
+}
 }

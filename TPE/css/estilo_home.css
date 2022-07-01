@@ -1,7 +1,7 @@
 body{
     background-color: rgb(255, 232, 23);
 }
-.logo {
+.encabezado {
     display: block;
     padding: 10px;
     background-color: rgb(61, 61, 65);
@@ -13,7 +13,7 @@ h1{
     font-size: 30px;
     text-align: center;
 }
-button{
+.navegar{
     background: none;
     border: 0px;
     color: inherit;
@@ -106,14 +106,10 @@ ul.navigation li:hover {
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 2px;
-    font-size: 15px;
+    
 }
 li{
     color: rgb(255 215 0);
-}
-#captcha{
-    text-align: center;
-    font-size: 20px;
 }
 #logo{
     display: none;
@@ -167,11 +163,6 @@ h3{
         height: 185px;
         margin: 3px; 
     }
-    button{
-        background: none;
-        border: 0;
-        color: inherit;
-    }
     .boton{
         border-style: solid;
         color: rgb(255, 232, 23);
@@ -189,37 +180,37 @@ h3{
         padding: 15px;
         margin: 3px;
         border-style: solid;
+        width: 33%;
         background-color: rgb(61, 61, 65);
+    }
+    .muestra{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
     }
     #polarizado{
-        display: flex;
+        display: block;
         max-width: 300px;
         max-height: 300px;
-        height: auto;
-        width: auto;
-        padding-left: 75px;
-        padding-top: 8px;
     }
     #contacto{
+        width: 33%;
         margin: 3px;
         padding: 15px;
+        height: auto;
         border-style: solid;
         background-color: rgb(61, 61, 65);
     }
+    #logo_sucursales{
+        display: flex;
+        justify-content: center;
+    }
     #logo{
-        display:block;
-        margin-left: 50px;
+        display: flex;
         margin-top: 15px;
     }
-    #captcha{
-        color: black;
-        border-style: solid;
-        text-align: center;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        padding: 5px;
-        margin-left: 150px;
-        margin-right: 150px;
-        background-color: rgb(12, 83, 214) ;
+    aside{
+        width: 33%;
     }
     #sucursales{
         border-style: solid;
@@ -228,6 +219,7 @@ h3{
         margin: 3px;
         padding-top: 20px;
         padding-bottom: 26px;
+        height: auto;
     }
     #contenedor_inferior{
         display: flex;

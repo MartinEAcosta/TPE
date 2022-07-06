@@ -3,7 +3,7 @@ body{
   background-color: rgb(255, 232, 23);
 
 }
-.logo { 
+.encabezado {
   display: block;
   padding: 10px;
   background-color: rgb(61, 61, 65);
@@ -11,14 +11,14 @@ body{
   border-style: solid;
   border-color: black;
 }
-h1{
-  font-size: 30px;
-  text-align: center;
-}
-button{
+.navegar{
   background: none;
   border: 0px;
   color: inherit;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
 }
 .boton{
   color: rgb(255, 232, 23);
@@ -87,38 +87,49 @@ ul.navigation li:hover {
   padding-bottom: 15px;
 }
 th {
-    background-color: rgb(61, 61, 65);
-    color: white;
+  background-color: rgb(16, 16, 17);
+  color: white;
   }
   
-  tbody {
-    color: white;
-    
-    
-  }
-  
-  tfoot {
-    color: white;
-    
-  }
-  
-  table, td, tr {
-    border: 1px solid black;
-      border-collapse: collapse;
-  }
-
-  footer{
-    background-color: grey;
-    border: solid;
-    margin: 0px;
-    margin-top: 3px;
+tbody {
+  color: rgb(255, 232, 23);
+  text-align: center;
 }
-
+tfoot {
+    color: white;
+    
+}
+table, td, tr {
+    background-color: gray;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h3, h4{
+  text-align: center;
+  color:rgb(255, 232, 23);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  border: 2px solid black;
+  padding: 0px;
+}
+.txtinput{
+  color:rgb(255, 232, 23);
+}
+footer{
+  border: solid;
+  margin: 0px;
+  margin-top: 3px;
+  background-color: white;
+  text-align: center;
+  text-decoration: underline;
+}
 .btn-lista{
   background-color: white;
   border-style: solid;
 }
-
 
 @media only screen and (min-width: 660px) {
 
@@ -151,12 +162,6 @@ h1{
   font-family: 'Oswald', sans-serif;
   font-size: 1cm;
 }
-
-button{
-  background: none;
-  border: 0;
-  color: inherit;
-}
 .boton{
   border-style: solid;
   color: rgb(255, 232, 23);
@@ -167,7 +172,13 @@ ul.navigation {
   flex-direction: row;
   justify-content: space-around;
 }
-
+table{
+  background-color: rgb(27, 27, 29);
+}
+td{
+  font-size: larger;
+  background-color: grey;
+}
 .contenedor{
   display: flex;
   width: auto;
@@ -175,7 +186,7 @@ ul.navigation {
   margin: 3px;
   margin-top: 6px;
   border-style: solid;
-  background-color: rgb(27, 27, 29);
+  background-color: rgb(61, 61, 65);
 }
 
 .btn-lista{
@@ -194,44 +205,16 @@ ul.navigation {
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.tablas{
-  display:flex;
+form{
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-bottom: 15px;
+  background-color: gray;
+  border-style: solid;
+  padding: 5px;
 }
-th {
-    background-color: rgb(61, 61, 65);
-    color: white;
-  }
-  
-  tbody {
-    color: rgb(255, 232, 23);
-    
-    
-  }
-  
-  tfoot {
-    color: rgb(255, 232, 23);
-    
-  }
-  
-  table, td, tr {
-    border: 1px solid black;
-      border-collapse: collapse;
-  }
+.txtinput{
+  color:rgb(255, 232, 23);
+}
 
-  table{
-      width: 30%;
-    background-color: grey;
-  }
-h3{
-  text-align: center;
-  color: red;
-}
-footer{
-  background-color: white;
-  text-align: center;
-  text-decoration: underline;
-}
 }

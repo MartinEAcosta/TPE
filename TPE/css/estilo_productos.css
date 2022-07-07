@@ -146,16 +146,6 @@ header{
   height: 185px;
   margin: 3px;   
 }
-
-.logo { 
-  display: block;
-  padding: 10px;
-  background-color: rgb(61, 61, 65);
-  color: white;
-  border-style: solid;
-  border-color: black;
-}
-
 h1{ 
   color: white;
   text-align: center;
@@ -197,13 +187,7 @@ td{
 }
 #titulo_ventas{
   color: white;
-  text-align: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#texto_ventas{
-  color: white;
-  text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 form{
   display: flex;
@@ -213,8 +197,6 @@ form{
   border-style: solid;
   padding: 5px;
 }
-.txtinput{
-  color:rgb(255, 232, 23);
-}
+
 
 }

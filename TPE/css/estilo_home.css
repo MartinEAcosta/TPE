@@ -125,9 +125,11 @@ li{
 }
 footer{
     border-style: solid;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     margin-top: 5px;
     padding: 5px;
+    text-align: center;
+    text-decoration: underline;
 }
 .texto_redes{
     text-align: center;
@@ -265,12 +267,5 @@ h3{
         margin: 0px;
         padding: 0px;
     }
-    footer{
-        background-color: white;
-        text-align: center;
-        text-decoration: underline;
-    }
-
-
 
 }

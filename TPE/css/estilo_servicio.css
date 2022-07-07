@@ -112,7 +112,7 @@ li{
     body{
             background-color: gray;
         }
-        .btn_menu {
+    .btn_menu {
             display: none;
         }
 
@@ -152,6 +152,6 @@ li{
         border-style: solid;
         background-color: rgb(61, 61, 65);
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
     }
 }

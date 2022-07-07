@@ -3,7 +3,7 @@ const url = "https://62bdaea2bac21839b608f94d.mockapi.io/api/Producto";
 const tabla = document.querySelector('#tabla');
 let id = 0;
 tabla.innerHTML = "";
-
+obtenerDatos();
 // GET //  
 
 
@@ -48,6 +48,7 @@ async function agregaDato(){
         "precio": precionew,
         "stock": cantnew,
     }
+    
     try {
         let res = await fetch(url, {
             "method": "POST",
@@ -55,7 +56,7 @@ async function agregaDato(){
             "body": JSON.stringify(productonuevo)
         });
         if (res.status === 201) {
-            console.log("Se agrego un prod");
+            console.log("Se agrego un prod");    
         }
         tabla.innerHTML = "";
         obtenerDatos();
@@ -63,6 +64,7 @@ async function agregaDato(){
     catch (error) {
         console.log(error);
     }
+    
 }
 
 // DELETE //
@@ -79,11 +81,11 @@ async function borrarFila(id){
         else {
             console.log("Fallo el intento de borrar");
         }
+        tabla.innerHTML = "";
     }
     catch (error) {
         console.log(error);
     }
-    obtenerDatos();
 }
 
 //EDIT//
@@ -109,26 +111,25 @@ async function editarFila(id){
         if (res.status=== 200) {
             console.log("Se modifico un prod");
         }
-
-     
+        tabla.innerHTML = "";
+        obtenerDatos();
     }
     catch (error) {
         console.log(error);
     }
 }
-obtenerDatos();
-
 
 // BUTTONS INTEGERS //
 
 document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("#btnEliminar")){
+    if(e.target.classList.contains("btnEliminar")){
         borrarFila(e.target.id)
     }
-});
+})
 document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("#btnEditar")){
+    if(e.target.classList.contains("btnEditar")){
         editarFila(e.target.id)
     }
-});
+})
 
+    

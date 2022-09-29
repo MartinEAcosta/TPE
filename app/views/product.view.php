@@ -7,10 +7,10 @@ class ProductView{
         include './templates/header.php';
         include './index.php';
 
-        echo "<ul> class='list-group mt-5'>";
+        echo "<ul class='list-group mt-5'>";
         foreach($products as $product){
             echo "<li class='list-group-item'>
-                $products->name | $products->price 
+                $product->name | $product->price | $product->stock
                 </li>";
         }
         echo "</ul>";       

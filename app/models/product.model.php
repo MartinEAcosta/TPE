@@ -3,17 +3,28 @@
 
 class ProductModel{
 
-    private $db;
+// Abro conexion con base de datos.// 
+function connect(){
+    $db = new PDO('mysql:host=localhost;'.'dbname=db_products;charset=utf8', 'root', '');
+    return $db;
+}
+// El return nos devuelve los productos de la base de datos
 
-    public function __construct(){
-        $this->db = new PDO('mysql:host=localhost;'.'dbname=db_products;charset=utf8', 'root', '');
-    }
-    public function getProducts(){
-        $query = $this->db->prepare("SELECT * FROM Products");
-        $query->execute();
-        $products = $query->fetchAll(PDO::FETCH_OBJ);
+function getProducts(){
 
-        return $products;
+    $db = $this-> connect();
 
-    }
+    //duda from ¿A que se refiere? Tabla o que
+    $query = $db-> prepare('SELECT * FROM Products');
+    $query->execute();
+
+    $products = $query->fetchAll(PDO::FETCH_OBJ);
+
+    return $products;
+
+}
+
+
+
+
 }

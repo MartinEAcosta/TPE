@@ -14,6 +14,15 @@ class ProductController{
         $this->view = new ProductView();
 
     }
+
+    function showProducts(){
+        
+        $products = $this->model->getProducts();
+        
+        $this->view->showProducts($products);
+
+        
+    }
     
 
 

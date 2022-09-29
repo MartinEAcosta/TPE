@@ -26,7 +26,6 @@
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Perifericos</a></li>
                 <li><a class="dropdown-item" href="#">Componentes</a></li>
-                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Monitores</a></li>
             </ul>
         </ul>

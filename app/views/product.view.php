@@ -4,8 +4,7 @@
 class ProductView{
 
     function showProducts($products){
-        include './templates/header.php';
-        include './index.php';
+        include './templates/header.tpl';
 
         echo "<table class='table'>
                 <thead>
@@ -26,7 +25,7 @@ class ProductView{
 
 
 
-        include './templates/footer.php';
+        include './templates/footer.tpl';
     } 
     
     

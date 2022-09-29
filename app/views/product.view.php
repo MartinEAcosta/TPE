@@ -7,13 +7,22 @@ class ProductView{
         include './templates/header.php';
         include './index.php';
 
-        echo "<ul class='list-group mt-5'>";
+        echo "<table class='table'>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>";
         foreach($products as $product){
-            echo "<li class='list-group-item'>
-                $product->name | $product->price | $product->stock
-                </li>";
+            
+            echo "<tr> <td> $product->name </td> <td> $product->price </td> <td> $product->stock </td> </tr>";
+   
         }
-        echo "</ul>";       
+        echo "</tbody>
+            </table>";       
 
 
 

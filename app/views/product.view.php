@@ -1,33 +1,28 @@
 <?php
-
+require_once './libs/smarty-4.2.1/libs/Smarty.class.php';
 
 class ProductView{
 
+    private $smarty;
+
+    public function __construct(){
+        $this->smarty = new Smarty();
+        
+    }
+
+
     function showProducts($products){
-        include './templates/header.tpl';
 
-        echo "<table class='table'>
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                        <th>Stock</th>
-                    </tr>
-                </thead>
-                <tbody>";
-        foreach($products as $product){
-            
-            echo "<tr> <td> $product->name </td> <td> $product->price </td> <td> $product->stock </td> </tr>";
-   
-        }
-        echo "</tbody>
-            </table>";       
+        $this->smarty->assign('products', $products);
+        $this->smarty->display('templates/tableProduct.tpl');
 
-
-
-        include './templates/footer.tpl';
     } 
     
+    function showCategories($categories){
+        foreach ($categories as $category){
+            echo "<td>$category->name</td>";
+        }
+    }
     
     
     }

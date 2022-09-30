@@ -24,6 +24,12 @@ class ProductController{
         
     }
     
+    function showCategories(){
+
+        $categories = $this->model->getCategories();
+
+        $this->view->showCategories($categories);
+    }
 
 
 

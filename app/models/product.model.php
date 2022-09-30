@@ -24,6 +24,19 @@ function getProducts(){
 
 }
 
+function getCategories(){
+
+    $db = $this->connect();
+
+    $query = $db-> prepare('SELECT * FROM Categories');
+    $query->execute();
+
+    $categories = $query->fetchAll(PDO::FETCH_OBJ);
+
+    return $categories;
+
+
+}
 
 
 

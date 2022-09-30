@@ -19,9 +19,11 @@ $taskController = new ProductController();
 switch ($params[0]) {
     case 'home':
         $taskController->showProducts();
+        $taskController->showCategories();
         break;
     default:
         echo('404 Page not found');
         break;
 }
+//listar items, categorias, filtro por categoria, filtro || alta y baja del item, update.
 

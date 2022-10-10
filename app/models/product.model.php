@@ -2,42 +2,36 @@
 
 
 class ProductModel{
+    private $db;
 
-// Abro conexion con base de datos.// 
-function connect(){
-    $db = new PDO('mysql:host=localhost;'.'dbname=db_products;charset=utf8', 'root', '');
-    return $db;
-}
-// El return nos devuelve los productos de la base de datos
+    // Abro conexion con base de datos.// 
+    public function __construct(){
+        $this->db = new PDO('mysql:host=localhost;'.'dbname=db_products;charset=utf8', 'root', '');
+    }
 
-function getProducts(){
+    function getProducts(){
+        // categoria = c_name, con el as le di el nombre
+        $query = $this->db-> prepare('SELECT Products. *, Categories.c_name as categoria FROM Products JOIN Categories ON Products.id_category = Categories.id_category ');
+        $query->execute();
 
-    $db = $this-> connect();
+        $products = $query->fetchAll(PDO::FETCH_OBJ);
 
-    //duda from ¿A que se refiere? Tabla o que
-    $query = $db-> prepare('SELECT * FROM Products');
-    $query->execute();
+        return $products;
 
-    $products = $query->fetchAll(PDO::FETCH_OBJ);
+    }
 
-    return $products;
+    public function insertProductDB($productAdd,$priceAdd,$descAdd,$stockAdd,$categoryAdd){
 
-}
+        $query = $this->db->prepare("INSERT INTO Products (p_name, price, p_description, stock, id_category) VALUES (?, ?, ?, ?, ?)");
+        $query->execute([$productAdd,$priceAdd,$descAdd,$stockAdd,$categoryAdd]);
 
-function getCategories(){
+        return $this->db->lastInsertId();
 
-    $db = $this->connect();
+    }
+    
 
-    $query = $db-> prepare('SELECT * FROM Categories');
-    $query->execute();
-
-    $categories = $query->fetchAll(PDO::FETCH_OBJ);
-
-    return $categories;
-
-
-}
-
-
-
-}
+    function deleteProductById($id){    
+        $query= $this->db->prepare('DELETE FROM Products WHERE id = ? ');
+        $query->execute([$id]);
+    }
+    }

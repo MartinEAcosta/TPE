@@ -14,15 +14,13 @@ class ProductView{
     function showProducts($products){
 
         $this->smarty->assign('products', $products);
-        $this->smarty->display('templates/tableProduct.tpl');
+        $this->smarty->display('templates/tableProducts.tpl');
 
-    } 
-    
-    function showCategories($categories){
-        foreach ($categories as $category){
-            echo "<td>$category->name</td>";
-        }
     }
-    
-    
+
+    function showFormAdd(){
+        
+        $this->smarty->display('templates/addProduct.tpl');
+
+    }
     }

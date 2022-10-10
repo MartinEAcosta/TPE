@@ -24,14 +24,17 @@
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Perifericos</a></li>
-                <li><a class="dropdown-item" href="#">Componentes</a></li>
-                <li><a class="dropdown-item" href="#">Monitores</a></li>
+                <li><a class="dropdown-item" href="">Perifericos</a></li>
+                <li><a class="dropdown-item" href="">Componentes</a></li>
+                <li><a class="dropdown-item" href="">Monitores</a></li>
             </ul>
+            <li class="nav-item">
+            <a class="nav-link" href="login">Ingresar</a>
+            </li>
         </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+        <form action="search" method="GET" class="d-flex" role="search">
+            <input class="form-control me-2" type="text" placeholder="Producto o Marca" aria-label="Search" name="search">
+            <button class="btn btn-outline-success" type="submit" name="send">Buscar</button>
         </form>
         </div>
     </div>

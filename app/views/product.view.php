@@ -11,16 +11,46 @@ class ProductView{
     }
 
 
-    function showProducts($products){
-
+    function showProducts($products,$categories){
+        
         $this->smarty->assign('products', $products);
+        $this->smarty->assign('categories', $categories);
+
         $this->smarty->display('templates/tableProducts.tpl');
 
     }
+    function showProductDetail($detail,$categories){
+        $this->smarty->assign('detail',$detail);
+        $this->smarty->assign('categories', $categories);
+        $this->smarty->display('templates/product.tpl');
 
-    function showFormAdd(){
-        
+
+    }
+
+    function showFormAdd($products, $categories){
+
+        $this->smarty->assign('products', $products);
+        $this->smarty->assign('categories', $categories);
+
         $this->smarty->display('templates/addProduct.tpl');
 
+    }
+
+    function showFormEdit($products ,$categories,$toUpdate){
+        $this->smarty->assign('products', $products);
+        $this->smarty->assign('categories',$categories);
+        $this->smarty->assign('toUpdate', $toUpdate);
+
+        $this->smarty->display('templates/editProduct.tpl');
+    }
+
+
+    function showProductsFiltered($category ,$categories, $products){
+        
+        $this->smarty->assign('products', $products);
+        $this->smarty->assign('category', $category);
+        $this->smarty->assign('categories', $categories);
+
+        $this->smarty->display('templates/filter.tpl');
     }
     }

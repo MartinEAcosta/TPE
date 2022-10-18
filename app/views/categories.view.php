@@ -9,10 +9,19 @@ class CategoriesView{
         $this->smarty = new Smarty();
         
     }
-    function showCategoriesOptions($categories){
+    function showFormAddCategory($categories){
 
         $this->smarty->assign('categories', $categories);
-        $this->smarty->display('templates/tableProducts.tpl');
+        $this->smarty->display('templates/addCategory.tpl');
 
+    }
+
+    function showFormEditCategory($categories,$toUpdate){
+
+
+        $this->smarty->assign('categories',$categories);
+        $this->smarty->assign('toUpdate', $toUpdate);
+
+        $this->smarty->display('templates/editCategory.tpl');
     }
 }

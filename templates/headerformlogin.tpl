@@ -21,13 +21,6 @@
             <li class="nav-item">
             <a class="nav-link" href="home">Productos</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
-                <ul class="dropdown-menu">
-                {foreach from=$categories item=$category}
-                    <li><a class="dropdown-item" href="filter/{$category->id_category}">{$category->c_name}</a></li>
-                {/foreach}
-                </ul>
             {if !isset($smarty.session.USER_EMAIL)}
                 <li class="nav-item">
                 <a class="nav-link" href="login">Login</a>     

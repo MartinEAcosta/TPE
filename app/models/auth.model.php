@@ -13,5 +13,4 @@ class AuthModel {
         $query->execute([$email]);
         return $query->fetch(PDO::FETCH_OBJ);
     }
-
 }

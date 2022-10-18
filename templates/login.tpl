@@ -1,4 +1,4 @@
-{include file="templates/header.tpl"}
+{include file="headerformlogin.tpl"}
 <div class="mt-5 w-25 mx-auto">
     <form method="POST" action="validate">
         <div class="form-group">

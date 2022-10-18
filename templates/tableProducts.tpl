@@ -4,29 +4,32 @@
     <tr>
         <th>Imagen</th>
         <th>Producto</th>
+        <th>Caracteristicas</th>
         <th>Precio</th>
         <th>Stock</th>
         <th>Categoria</th>
-        {if $user= true}
+        {{if isset($smarty.session.IS_LOGGED)}}
             <th>Editar</th>
             <th>Eliminar</th>
-        {/if}
+        {{/if}}
     </tr>
 </thead>
 <tbody>
-{foreach from=$products item=$product }
+{foreach from=$products item=$product}
     <tr>
-        <td> </td>
-        <td> {$product->p_name} </td>
+        <td><img src="{$product->img}" ></td>
+        <td><a href="product/{$product->id}">{$product->p_name}</a></td>
+        <td> {$product->p_description}</td>
         <td> {$product->price} </td>
         <td> {$product->stock} </td>
         <td> {$product->categoria}</td>
-        {if !isset($smarty.session.USER_ID)}
-            <td><a href="edit/{$product->id}">Editar</a></td>
+        {{if isset($smarty.session.IS_LOGGED)}}
+            <td><a href="editform/{$product->id}">Editar</a></td>
             <td><a href="delete/{$product->id}">Eliminar</a></td>
-        {/if}
+        {{/if}}
     </tr>
 {/foreach}
 </tbody>
 </table>
+
 {include file="templates/footer.tpl"}
